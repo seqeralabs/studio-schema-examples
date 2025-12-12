@@ -2,7 +2,7 @@
 
 This is a repository with examples of Seqera Studio schema definitions for various use cases.
 
-The example in this main branch a simple definition minimal definition to use a pre-built image for a VS Code studio from a registry.
+The example in this main branch is a simple, minimal definition to use a pre-built image for a VS Code studio from a registry.
 
 ```
 session:
