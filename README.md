@@ -15,10 +15,10 @@ You can find multiple other examples as the other branches of this repository.
 
 ### Available examples
 
-* [example-with-vars](../blob/example-with-vars/README.md) - A more extensive use of the schema that also configures dependencies and environment variables.
-* [example-dockerfile](../blob/example-dockerfile/README.md) - An example of how you can define a Dockerfile definition for a studio that will then be built and started as a studio in Seqera Platform.
-* [example-cloning-disabled](../blob/example-cloning-disabled/README.md) - By default, repositories used to configure a studio are then cloned inside the studio - this example shows how to disable that. 
-* [example-barebones](../blob/example-barebones/README.md) - A minimal, bare-bone definition of the schema that can be used as starting point and extended.
+* [example-env-var](https://github.com/seqeralabs/studio-schema-examples/tree/example-env-var) - A more extensive use of the schema that also configures dependencies and environment variables.
+* [example-dockerfile](https://github.com/seqeralabs/studio-schema-examples/tree/example-dockerfile) - An example of how you can define a Dockerfile definition for a studio that will then be built and started as a studio in Seqera Platform.
+* [example-cloning-disabled](https://github.com/seqeralabs/studio-schema-examples/tree/example-cloning-disabled) - By default, repositories used to configure a studio are then cloned inside the studio - this example shows how to disable that. 
+* [example-barebones](https://github.com/seqeralabs/studio-schema-examples/tree/example-barebones) - A minimal, bare-bone definition of the schema that can be used as starting point and extended.
 
 ### Documentation
 
