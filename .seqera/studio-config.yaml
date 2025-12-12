@@ -3,3 +3,10 @@ kind: "studio-config"
 session:
     template:
         kind: "none"
+    clone:
+        enabled: false
+    dependencies:
+        condaEnvironmentFile: "environment.yaml"
+    environmentVariables:
+        -   name: "S3_1000_GENOMES_PUBLIC_BUCKET"
+            value: "s3://1000genomes"
