@@ -1,5 +1,8 @@
 schemaVersion: "0.0.1"
 kind: "studio-config"
 session:
+    name: "studio-example"
+    description: "A VS Code studio configured from git repository."
     template:
-        kind: "none"
+        kind: "registry"
+        registry: "public.cr.seqera.io/platform/data-studio-vscode:1.101.2-0.9"
