@@ -1,5 +1,22 @@
 schemaVersion: "0.0.1"
 kind: "studio-config"
 session:
+    name: "studio-example-env-vars"
+    description: "Example private VS Code studio that defines some helpful environmental variables with a 4hr lifespan."
     template:
-        kind: "none"
+        kind: "registry"
+        registry: "public.cr.seqera.io/platform/data-studio-vscode:1.101.2-0.9"
+    dependencies:
+        condaEnvironmentFile: "environment.yaml"
+    environmentVariables:
+        -   name: "CONNECT_CLIENT_LOG_LEVEL"
+            value: "debug"
+        -   name: "S3_1000_GENOMES_PUBLIC_BUCKET"
+            value: "s3://1000genomes"
+        -   name: "MD5_HASH"
+            value: "1305c7e470d7ca2e98b279005fc89416"
+        -   name: "SHA1_HASH"
+            value: "78b70f0b8140a2fe4d505d1ca0e1c65dcb5d96ca"
+    management:
+        lifespanHours: 4
+        isPrivate: true
