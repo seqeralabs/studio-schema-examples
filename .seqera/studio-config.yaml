@@ -1,8 +1,19 @@
 schemaVersion: "0.0.1"
 kind: "studio-config"
 session:
-    name: "studio-example"
-    description: "A VS Code studio configured from git repository."
+    name: "studio-private-lifespan"
+    description: "A JupyterLab studio configured from git repository."
     template:
         kind: "registry"
-        registry: "public.cr.seqera.io/platform/data-studio-vscode:1.101.2-0.9"
+        registry: "public.cr.seqera.io/platform/data-studio-jupyter:4.2.5-0.9"
+    clone:
+        enabled: true
+        path: "/workspace"
+    computeRequirements:
+        awsBatch:
+            cpu: 4
+            gpu: 4
+            memory: 16384
+    management:
+        lifespanHours: 4
+        isPrivate: true
