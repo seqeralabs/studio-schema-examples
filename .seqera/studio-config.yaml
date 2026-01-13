@@ -9,11 +9,6 @@ session:
     clone:
         enabled: true
         path: "/workspace"
-    computeRequirements:
-        awsBatch:
-            cpu: 4
-            gpu: 0
-            memory: 16384
     management:
         lifespanHours: 4
         isPrivate: true
