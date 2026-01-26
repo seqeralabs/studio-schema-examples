@@ -102,6 +102,9 @@ RUN nextflow help > /dev/null
 
 COPY init /init
 
+# Add connect-client version label to image metadata
+ARG CONNECT_CLIENT_VERSION
+LABEL io.seqera.connect.version="${CONNECT_CLIENT_VERSION}"
 # Add connect binary
 COPY --from=connect /usr/bin/connect-client /usr/bin/connect-client
 # Install connect dependencies
